@@ -1,0 +1,288 @@
+---
+layout: project
+tags: [ MPO, RFP, MWCOG, model-development]
+title: Metropolitan Washington Council of Governments (MWCOG) Gen3 Model Devleopment
+agency: Metropolitan Washington Council of Governments (MWCOG)
+agency-type: MPO
+solicitation-type: RFP
+solicitation-release-date: 2019-05-15
+solicitation-years-of-performance: 3.0
+solicitation-value: 900000
+solicitation-DBE-goal: points-based
+solicitation-location: '{{ site.baseurl }}/library/2019-RFP-MWCOG-Gen3Model.pdf'
+solicitation-short-description: Development of next-generation regional travel demand forecasting model; Model estimation, calibration, validation, and sensitivity testing, leading to a final model application package that is useable by TPB staff; and Documentation and training.
+---
+# MWCOG and NCRTPB
+The Metropolitan Washington Council of Governments (MWCOG or COG) is the regional organization of the Washington area's 24 major local governments and their governing officials, plus area members of the Maryland and Virginia legislatures and the U.S. Senate and House of Representatives. COG provides a focus for action on issues of regional concern, such as transportation planning, air and water quality management, environmental monitoring, tracking economic development and population growth and their effects on the region, coordinating public safety programs, and promoting child care and housing for the region. COG is supported by financial contributions from its participating local governments, federal and state government grants and contracts, and through grants and contracts from foundations and the private sector.
+The National Capital Region Transportation Planning Board (NCRTPB or TPB) is the federally designated Metropolitan Planning Organization (MPO) for the Washington, D.C. metropolitan area and is also one of several policy boards that operate at COG. The TPB is responsible for coordinating transportation planning at the regional level in Northern Virginia, Suburban Maryland and the District of Columbia. The TPB plays an important role as the regional forum for transportation planning and, as the MPO, is responsible for conducting the “continuing, comprehensive and cooperative” planning process, known as the “3C” planning process.
+The TPB prepares plans and programs that the federal government must approve for federal- aid transportation funds to flow to the Washington region. Members of the TPB include representatives of the transportation agencies of the states of Maryland and Virginia and the District of Columbia, local governments, the Washington Metropolitan Area Transit Authority (WMATA), the Maryland and Virginia General Assemblies, and non-voting members from the Metropolitan Washington Airports Authority (MWAA) and federal agencies.
+The TPB was created in 1965 by local and state governments in the Washington region to respond to a requirement of 1962 highway legislation for establishment of official MPOs. The TPB became associated with COG in 1966, serving as COG’s transportation policy committee. The TPB is staffed by COG’s Department of Transportation Planning (DTP). COG acts as the administrative agent for the TPB, so contracts are issued from COG, not the TPB.
+
+# Background
+The COG/TPB staff develops and maintains, with consultant assistance, a series of regional travel demand forecasting models that are used for the regional transportation planning process in the Washington, D.C. area. These regional travel demand models are developed under the guidance of the Travel Forecasting Subcommittee (TFS), a subcommittee of TPB’s Technical Committee. At any given time, the COG/TPB staff maintains at least two regional travel demand models - an adopted, production-use model and a developmental model. The production-use model is the one that is used in planning studies conducted by COG/TPB and is made available to outside parties.5 The developmental model is the one that is currently under development by COG/TPB staff, and is generally not made available to outside parties, since it is not yet considered a finished product.
+
+# Project overview
+## Purpose and need
+This model development/improvement project has three primary objectives-
+1. To ensure that the COG/TPB travel demand forecasting methods are either state of the practice or state of the art with respect to the modeling practices of our peer MPOs. It is understood that state-of-the-art methods typically require more resources than state-of-the-practice methods, and that there are limited model development resources available.
+2. To address current shortcomings with the TPB’s adopted, production-use travel demand model (currently the Ver. 2.3 Model, and possibly the Ver. 2.5 Model, if that model is deemed suitable for production use).
+3. To ensure that the new model has the capability to address all the pressing regional transportation planning issues in the Washington, D.C. region.
+
+Travel forecasting methods used by MPOs are composed of data, methods, and models. Each of these three components can have limitations or shortcomings. The shortcomings of the current TPB travel demand forecasting process are discussed in the following documents-
+a. The Product Requirements Document (PRD),23 which was part of the RFI.
+b. The report “Identifying Potential Opportunities for Model Improvement.
+c. Recent presentations and memos on the performance and validation of the Ver. 2.3 and Ver. 2.5 models.25
+d. “TPB staff review of six years of consultant recommendations from the
+ongoing consultant-assisted project for models development,” 2012.26
+One example of a current shortcoming of the TPB’s production-use travel demand forecasting model is its current overestimation of Metrorail demand. Since 2009, patronage of the Metrorail system has declined or been flat. An initial cause of the declining demand was an accident on the system,27 but the prolonged depressed demand is generally attributed to other factors, such as maintenance-related closures of sections of track, increased telecommuting, and the increased usage of smartphone ride hailing services.28 By contrast, the travel model, which generally does not account for these factors, shows a Metrorail patronage that increases with increasing population. Some would argue that some of these trends are short-term trends that a long-range forecasting model cannot be expected to replicate, but, it is, nonetheless, disheartening when a model cannot match a trend that has been underway for several years. Given that the current TPB model (Ver. 2.3) was calibrated using the 2007/2008 Household Travel Survey (at a time when smartphones were just beginning to appear on the market and prior to the introduction, in 2012, of smartphone-based ride-hailing services), some would argue that, the inability of the model to replicate this behavior is a shortcoming of the data, not the model, per se. At any rate, the model is calibrated on the data, so shortcomings in the data, ultimately manifest themselves in the model, too.
+A second recognized shortcoming of the current model, regarding model performance, is its underestimation of commuter rail travel. Although this market represents only about 4% of total transit, it is, nonetheless, a visible market, in terms of transit patronage summaries and public visibility. Lastly, on the highway side, a recent re-validation of the model showed that only half of the 34 screenlines had estimated-to-observed vehicle crossings that met or exceeded state or national benchmarks.29 Some would argue that these national benchmarks are not applicable to our context, but the benchmarks at least provide a starting point for the discussion.
+As noted in the PRD (Section 3.4.3), some of the policies/modeling issues important to the metropolitan Washington region include the following -
+
+ 1. Modeling of transit and transit sub-modes (e.g., bus versus light rail)
+   * Mode choice and path-building- The trend has been to move some of this modeling of transit sub-modes out of mode choice and into path building
+   * Transit assignment
+      * i. All-or-nothing versus capacity restrained
+      * Production/attraction format versus origin/destination format
+      * Transit crowding. Even though there have been some declines in transit ridership in recent years, transit crowding/capacity, on both rail and some bus lines, remains an issue. For example, the model must represent the fact that there is a limit to the number. of Metrorail trains that can travel to/through the regional core in peak periods.
+2. Modeling highway travel (private-use cars and trucks)
+   * Highway assignment- Very long run times to reach acceptable levels of convergence
+   * Modeling HOV lanes, HOT lanes, and other managed-lane facilities
+3. Modeling non-motorized modes (walk and bike)
+4. Assessing the effect of land development patterns and job/housing balance on transportation system performance
+5. Modeling the effect of travel time unreliability in travel behavior
+6. Modeling the effect of maintenance closures, such as Metrorail’s SafeTrack, of the inability to maintain roads and transit infrastructure in a state of good repair, which can lead to travel time unreliability and traveler dissatisfaction with using those facilities found in poor states of repair.
+7. Estimating the impacts of infill development on mode share/choice, particularly with regards to walk and bike modes.
+8. Modeling the effect of the employer-based transit subsidies that some workers, especially federal, currently receive
+9. Telework, which has risen substantially over the past decade
+10. Increasing use of transportation network companies (TNCs) and other shared- mobility modes, including their effect on competing modes of travel
+11. Visitor/tourist travel- The Washington region receives many visitors, due, in part, to its role as the nation’s capital30
+12. Modeling peak spreading; Addressing the duration of the peak period, as opposed to focusing simply on the peak-hour condition
+13. Modeling the impact of travel time reliability (typically difficult to do with regional travel demand models)
+14. Representing/conveying the level of uncertainty in model inputs and outputs
+15. Impact of connected/autonomous vehicles (CAVs) in the coming years
+16. Modeling the impact of travel behavior of subsets of population, such as for the purposes of environmental justice (EJ)/social equity
+17. Freight planning. Although the Washington, D.C. area is not considered a major freight city, freight and commercial vehicles are still an important segment of the travel market
+18. Greenhouse gas analysis (identified by modeling stakeholders)
+19. Effect of Internet on travel (identified by modeling stakeholders)
+20. Traffic microsimulation (identified by modeling stakeholders)
+
+Additionally, modeling stakeholders noted several areas that they would like to see improved in the model -
+• Improved ease of adapting the regional model for sub-regional travel analyses
+• Improved ease of use
+• Shorter model run times
+
+## Planned work tasks
+Given the long duration of this project (about three years), it is difficult to specify all details about all tasks in one document, such as this RFP. Consequently, the RFP describes some of the tasks, especially those earlier in the project, with more detail, and omits detail for some of the later tasks, since this detail can be provided during the contract period, using task orders and other such documents. This RFP includes a preliminary scope of work (below), but more detailed scopes of work will be included in future task orders after the award of the contract. We currently foresee the following work tasks under this contract -
+
+1. Investigations (consultant)
+a. Strengths and weakness of current travel model
+b. Recommended model form, including delineation of data sets to be used
+for current effort and to be collected for future work
+c. Recommended approach for traffic and transit assignment
+d. Quality control and quality assurance (QC/QA)
+e. Recommended software
+
+2. Decisions (TPB staff)
+
+3. Development of the Gen3 Model (consultant, with some assistance by TPB staff)
+a. Model specification
+b. Model estimation
+c. Model implementation
+d. Model calibration
+e. Model validation
+  * Validation tests
+  * Sensitivity tests
+f. Draft model documentation
+g. Delivery of draft Gen3 Model to TPB staff and training
+
+4. Second round of model calibration and validation. Based on results from the initial model validation, it will likely be necessary conduct a second round of model estimation, calibration, and validation. It is hoped that the 2017/2018 RTS would be available for use (cleaned and factored) for this second round of calibration and validation.
+a. Model estimation
+b. Model calibration
+c. Model validation
+  * Validation tests ii. Sensitivity tests
+d. Final model documentation
+e. Delivery of final Gen3 Model to TPB staff and training
+
+5. Final testing of Gen3 Model by TPB staff & decision about its readiness for production work, such as the air quality conformity analysis (consultant still under contract)
+
+6. End of contract
+More detailed information/discussion can be found below, including information about expected deliverables.
+
+# Expected qualifications of proposers/offerors
+## Minimum qualifications
+Proposals must demonstrate that the firm or team submitting the proposal (“Proposer”) meets the following minimum qualifications to be eligible for consideration for this project.
+1. Project manager must have experience with a minimum of two projects comparable to what is requested in this RFP, ideally, within the last five years.
+2. Each project team member, other than support staff, must have a minimum of one year of work or academic experience in the tasks which he or she is proposed to work.
+
+## Desired qualifications
+A firm or team with experience in the technical procedures and software used in COG’s current and potential analytical tools, including the following-
+  1. Activity-based, demand micro-simulation travel demand forecasting models (potential tool)
+2. Tour-based and/or hybrid travel demand forecasting models (potential tool)
+3. Citilabs Cube Base, Voyager, and Cluster (current tool)
+4. Other travel demand forecasting software packages (potential tool)
+5. Python and Visual Basic .NET (VB.NET) programming languages (current tool)
+6. Other programming/scripting languages (potential tool)
+7. Big Data (current and potential data/tool)
+8. Geographic information systems (GIS), such as ArcGIS or QGIS (current tool).
+
+# Preliminary scope of work
+This section of the RFP presents a preliminary scope of work. The consultant may be asked to complete tasks including, but not necessarily limited to, those listed below.
+
+## Task 1- Project management plan
+The consultant will prepare a project management plan (PMP) that outlines a proposed work plan and schedule. The PMP should delineate roles and responsibilities for the various team members and establish communication protocols, including in-person meetings, teleconferences, and web-based meetings. The consultant will prepare and submit monthly progress reports, task-based invoices (typically monthly), and any supporting documentation. The PMP should suggest ways that the TPB staff can be involved in each major task, so that TPB staff will understand the new model and be able to support it. To achieve this goal, the consultant, in coordination with TPB staff, will identify which developmental tasks or subtasks TPB staff can assist with, keeping in mind that the consultant has the lead role for most, if not all, major tasks. In effect, this collaboration will provide TPB staff familiarity with the new model during the development cycle, and not just at the end of development. It is recommended that all project-related communication, especially emails, go between the COG project manager (currently Mark Moran) and the consultant project manager. As a minimum, the following meetings are proposed -
+
+Kick-off meeting, to review data, project tasks, and proposed schedule. Regular check-in meetings (likely on a weekly or bi-weekly basis).
+Task 1 Deliverables
+1.1. Project management plan (PMP).
+1.2. Attend meetings as required. Prepare meeting summaries.
+1.3. Monthly progress reports.
+
+## Task 2: Investigations: Part 1 of 2: Assessment of the current travel model and recommendations for improvement
+It is expected that the development of the Gen3 Model will begin with a series of investigations. Some of these investigations were explored as part of the RFI, which received responses from seven vendors. Nonetheless, the selected consultant will need to conduct the investigations described below and document them in two reports (noted in the deliverables sections).
+### 1. Strengths and weaknesses of the current travel model
+In support of objective 2, listed on p. 13, the first consultant report should document the main strengths and weaknesses of the current travel model (currently the Ver. 2.3 Model, and possibly the Ver. 2.5 Model, if that model goes into production use). As noted earlier, the shortcomings of the current model are discussed in the following documents-
+  * The Product Requirements Document (PRD),31 which was part of the RFI.
+  * The report “Identifying Potential Opportunities for Model Improvement.”32
+  * Recent presentations and memos on the performance and validation of the Ver. 2.3 and Ver. 2.5 models.
+d. For background, “TPB staff review of six years of consultant
+recommendations from the ongoing consultant-assisted project for models development,” 2012.34
+This strengths and weaknesses assessment will form the basis for other recommendations made by the consultant. In conducting the research to write this section of the report, the consultant should interview TPB staff, review recent reports discussed above, and look at model performance summaries.
+### 2. Recommended model form
+The long-term goal of the TPB staff, and for many modeling staff at large MPOs, is a disaggregate travel demand model, such as an ABM, paired with a disaggregate travel supply model, such as dynamic traffic assignment (DTA), which is represented as Quadrant 4 in Table 3. The current TPB travel model includes both an aggregate representation of demand (e.g., zone-level, trip-based, four-step model) and an aggregate representation of supply (TAZ-level transportation network with a static traffic assignment), which is represented as Quadrant 1 in Table 3.
+
+Table 3 Cross classification of travel demand models by demand/supply versus aggregate and disaggregate
+--
+
+So, a key question, as we move from the current, production-use (Gen2) model to the future Gen3 and Gen4 models, is- Which of the three remaining quadrants (2, 3, or 4) should we move to first, e.g., as part of the Gen3 Model?
+Quadrant 2 corresponds to an aggregate travel model paired with a disaggregate traffic assignment, such as DTA. Quadrant 3 corresponds to a disaggregate demand model, such as an ABM, paired with static traffic assignment. According to our survey of peer MPOs, most of them have chosen to begin with Quadrant 3 (e.g., an ABM with static traffic assignment). Specifically, about 70% of our peer group are either using an ABM in production or developing one.35 By contrast, only about 39% of our peer group are using DTA or developing it.36 If we focus on what is being used in production (ignoring models that are simply under development), 26% of our peer group is using an ABM in production, but only 9% is using regional DTA in production.
+We received similar indications from the responses from our RFI. Five out of seven (71%) of RFI respondents recommended that COG move first to a disaggregate demand model (e.g., an ABM or hybrid model), as shown in Figure 3.37 Only one out of seven (14%) recommended that COG move first to Quadrant 2 (aggregate travel model with DTA). Likewise, only one out of seven (14%) recommended that COG move directly to Quadrant 4 (both ABM and DTA together).
+
+For the purposes of this RFP, it is assumed that the COG/TPB model will be moving first to Quadrant 3 (a disaggregate demand model with static traffic assignment), with a subsequent move, in 3 to 10 years, to Quadrant 4. This RFP for the Gen3 Model is focused on the next three years. Regarding the model form that will be pursued for the Gen3 Model (e.g., trip-based, tour- based, activity-based, or some hybrid of these), it is presumed that this decision will be made by TPB staff, within the first half of the contract period, after consultation with the selected consultant, while considering the available resources for this project.
+
+As noted in the PRD, the TPB staff needs a travel model that is practical to use by TPB staff and can analyze the current and future transportation issues of the metropolitan Washington region, which are noted in Section 3.4 of the PRD. Also note that, along with the recommended model form, the consultant should delineate the data sets to be used for Gen3 and Gen4 models. By making such a delineation at this stage, it will provide more time for preparing data sets. Additionally, if some important data are found to be missing, TPB staff and the consultant can develop an alternative approach.
+
+When the selected consultant makes its recommendation about model form for the Gen3 Model, that selection should consider both the model requirements and project constraints discussed in the PRD. In the strategic plan developed by CS in 2015, an ABM was recommended.38 However, based on discussions with staff at MPOs that have implemented or are working to implement an ABM, it has become clear that, despite the theoretical advantages of ABMs, the development and use of an ABM comes with many challenges, e.g., long development times, long model run times, and difficulties for staff when they need to track down the source of counterintuitive results. Consequently, TPB staff is open to a variety of model types and recognizes there are many trade-offs to consider. One type of model that has received recent attention is the hybrid model, which retains some characteristics of both an ABM (usually at the beginning of the model chain) and an aggregate, tour- or trip-based model (usually at the end of the model chain). Hybrid models were discussed in a recent TRB presentation and conference paper.39 In the end, the TPB staff is also open to any model form that meets the requirements in the PRD.
+3. Delineation of data sets to be used for current effort and to be collected for future work
+The first technical report should include recommendations about data collection and acquisition for observed data to support development of Gen3 or Gen4 models.
+4. Note about land use forecasting
+COG staff, working with local government staff, develop zone-level (TAZ-level) land activity forecasts for the modeled area shown in Figure 1 using a process known as the Cooperative Forecasts.40 This process is essentially a modified Delphi approach that combines both top-down regional land activity forecasts from an econometric model with bottom-up zone-level land activity forecasts from the local jurisdictions.41 According to the 2015 review of peer MPOs, a variety of approaches are used to forecast land use and there is no dominant approach,42 so COG’s current approach can be considered state of the practice. In the RFI, we asked the seven responding vendors which land use forecasting technique they recommended. One did not reply to the question. Of the six vendors who replied, five (83%) recommended that COG continue to use the existing modified Delphi approach, either to be used by itself, as is the current practice (4 vendor responses), or to be coupled with a land-use model (1 vendor response). Consequently, at this point, COG staff plans to continue to use the existing modified Delphi approach for zonal land use forecasting. Land activity forecasts for travel demand modeling are currently prepared for a zonal area system that comprises 3,722 TAZs, including external stations.
+5. Recommended approach for traffic and transit assignment
+Based on the observed behavior of our peer MPOs (see Figure 3), it is presumed that the Gen3 Model will not include DTA (though computing capabilities may have improved enough over three years to allow the use of regional DTA for the Gen4 model). The static traffic assignment (STA) remains the most common traffic assignment technique in use, throughout the U.S., even for regions that have moved to ABMs. Many researchers have noted the shortcomings of STA,43 but due, in part, to long model run times and the resources needed to develop and maintain DTA-capable networks, regional DTA is rarely used in practice. In the consultant report, discussed below under deliverables, the selected consultant should suggest the best time to introduce regional DTA (e.g., Gen3, Gen4, or later models). If the consultant recommends that TPB staff continue to use a static traffic assignment, the consultant shall provide recommendations on the best algorithms to use, and, if so warranted, which software packages contain those algorithms.
+The consultant should also provide a recommendation about how best to accomplish toll modeling (ideally including calibration and validation), which may be a stand-alone step prior to or after traffic assignment or be included in the assignment step. TPB staff will provide documentation about the toll modeling approach used in the current, production-use model.44
+The consultant shall also make recommendations about the best transit assignment approach to use. The current model makes use of transit assignment for two time-of-day periods (peak and off-peak) with trip tables in production-attraction (P-A) format with no capacity constraint.
+6. Quality control and quality assurance (QC/QA)
+Irrespective of the model form, regional travel demand models include a great deal of complexity, both in the computer scripts/code that make up the model and in the model inputs, such as the highway and transit networks. In the consultant report (described below), the consultant shall recommend ways to improve the QC/QA related to the model and its inputs. This shall be done after reviewing the documentation discussed earlier (regarding model shortcomings) and after talking to TPB staff regarding areas that need further QC/QA. The consultant shall talk with staff from the Model Development Group, the Model Application Group, and with TPB staff who code the transportation networks used in the travel model (network coding staff can be found in both the Model Development and Model Application groups). Some have suggested using version control software (such as Git) and collaboration software (such as GitHub) to improve QC/QA of changes to model code/scripts. Regarding the transportation networks used as inputs to the model, it would be useful to review COG’s current process (using COGTools)45 and compare it to other options. Note that COG is about to work with a consultant to develop a new database management system (DBMS), known as iTIP, to manage the transportation projects that are part of the Transportation Improvement Program (TIP). Thus, the selected consultant will want to pay attention to potential changes to the network database that may affect the connectivity to the iTIP.
+### Task 2 Deliverables
+This task has only one deliverable - The technical report described below.
+2.1. Technical report 1, covering the following topic areas-
+a. Strengths and weaknesses of the TPB’s current, production-use travel demand model
+b. Recommended model form for Gen3 Model and discussion of likely model form for Gen4 Model
+c. Recommended data collection and acquisition for observed data to support development of Gen3 or Gen4 models
+d. Recommended approach for moving to disaggregate transportation supply models, such as DTA, which will likely not be part of the Gen3 Model but could be part of Gen4 Model.
+e. Recommendations for improving QC/QA associated with travel model scripts and input files.
+In addition to discussing the strengths and weaknesses of the current travel demand model, this technical report should make the case for the best model form to be used for the Gen3 Model. Although the focus of this report is on the Gen3 Model, the report should also discuss issues relating to phasing or articulation for the Gen4 Model, whose development is expected to begin in about three years. The report should also discuss what observed data (e.g., household travel survey, transit on-board surveys, Census data, Big Data, traffic counts, transit counts) should be used for model estimation, calibration, and validation of the Gen3 and Gen4 models (A more detailed model calibration plan and model validation plan will be deliverables later during the contract and are discussed later in this RFP). If new data should be collected or acquired for either the Gen3 or Gen4 model, the report should include a data collection/acquisition plan that includes schedule for collecting or acquiring the new data.
+
+Ideally, when a recommendation is made in the report, the consultant should strive to make a compelling argument, ideally evidence-based, including, if possible, one or more case studies of successful implementations of the recommended model or approach. So, for example, if a consultant recommends developing a new trip-based model (which implies shorter development times) with lots of new data collection, the consultant should make a compelling case for why that is superior to alternate approaches, such as an activity-based model with little or no data collection. In cases where a more complicated model is recommended, the consultant should make a clear case for why the added complexity is worth it (considering the COG/TPB modeling roles and challenges, as listed in the PRD) and provide evidence that the proposed model can be used by both TPB staff and the various regional modeling stakeholders, principally state and local governments and consultants.
+
+The report should also indicate any changes to the travel model inputs, in support of the Gen3 Model, which are discussed in Section 6.1.5 (“Model inputs”) of the PRD. This could include -
+ - Changes to the zone system, e.g., use of land ownership parcels or micro- analysis zones (MAZs)
+ - Changes to the transportation networks, e.g., use of more disaggregate networks to aid in non-motorized modeling or representing access to transit.
+ - Changes to the land activity/land use data, which is currently input to the model at the TAZ level.
+Changes to any of the model inputs could require one or more years to implement, so the selected consultant should specify if these updates would be started during the development of the Gen3 or Gen4 models.
+
+Use of dynamic traffic assignment (DTA) - Based on the revealed behavior of our peer MPO group, it is not expected that the Gen3 Model will include a disaggregate transportation supply model, such as region-level dynamic traffic assignment (DTA). Even for MPOs that have adopted ABMs, they generally continue to use static traffic assignment (at least, for regional analyses). Nonetheless, the consultant report should discuss the recommended approach for moving to disaggregate transportation supply models, such as DTA. One possible approach would be to move to DTA as part of the Gen4 Model. If the consultant report were to recommend moving to regional DTA as part of the Gen3 Model, the consultants would need to make a clear case for why it is better to move DTA sooner rather than later. As noted earlier, the TPB’s long-term (multi-year) goal is to pair a disaggregate demand model (such as an ABM) with a disaggregate transportation supply model (such as DTA), but this is unlikely to occur for several more years, given the long model run times associated with DTA and the large amount of network data that is needed to feed and update networks associated with a DTA model.
+
+No matter what the recommended modeling approach is, it should fit within the constraints outlined in the PRD (see Chapter 6 [“Model requirements”] of the PRD). If the consultant believes that it is not possible to meet all these requirements (for example, the 24-hour model run time is not compatible with one or more requirements), the consultant should have a dialog with the TPB staff to decide which requirements can be relaxed and which must be maintained.
+
+## Task 3 - Investigations - Part 2 of 2. Recommended software to implement the Gen3 Model
+The current, adopted, production-use TPB travel demand forecasting model (Gen2/Ver. 2.3) is implemented using Citilabs Cube Base, Cube Voyager, Cube Cluster, Python (ArcPy and ArcGIS or ArcGIS Engine Runtime, to estimate transit walksheds), and LineSum.46 The transportation networks used as inputs to the regional model are maintained using a series of Esri personal geodatabases, which are edited graphically using COGTools,47 an ArcGIS add-in that is written in Visual Basic .NET (VB.NET). We also use Cube Base for network editing, viewing, and plotting. Each travel demand forecasting software package has its pros and cons. Some have better transit assignment procedures, others have quicker traffic assignment procedures. There are currently four main vendors of travel demand forecasting software - Citilabs, Caliper, INRO, and PTV. There are also software packages (platforms) that are focused on ABMs, such as CT-RAMP, DAYSIM, TourCast, ActivitySim, and software for population synthesis (needed for ABMs and some hybrid models).
+
+This second report should recommend what software should be used to implement the Gen3 Model. It is possible that the consultant might recommend switching to a new software package, if the new package can perform one of our key tasks in a superior manner. While many MPOs, like TPB, use software from only one of the four main vendors listed above, other MPOs use software from two or more vendors. If the selected consultant is recommending switching from Citilabs software to another package, or using Citilabs software and another software package, then this switch will require additional time for software conversion and staff training. This extra time will need to be recognized in the plans to implement the Gen3 Model. In the case of making a software conversion, the consultant should also consider the additional time and cost that might be required of member jurisdictions, who, in many cases, have developed travel models that were based on the COG/TPB model. One addition consideration is that software conversion may add cost when TPB staff prepares data transmittals for outside agencies that do not use the new software. The last time that
+
+COG conducted a full-scale review of travel demand forecasting software packages was in 2001.48 In 2011, COG’s on-call modeling consultant made suggestions regarding reviewing software packages,49 but no formal review was done by the consultant or TPB staff at that time.
+Below is a list of some of the key software packages that should be considered, as a minimum, by the consultant -
+ 1. Travel demand forecasting software, for path building, traffic assignment, and transit assignment- Citilabs Cube (our current software), Caliper TransCAD, INRO EMME, PTV VISUM, or even a combination of these. Each of these packages has strengths and weaknesses. In theory, our current travel model and a future travel model could be implemented in any of these, but aspects specific to the modeling needs for our region could make one package a better fit than another.
+ 2. Software to develop, edit, and maintain the transportation networks that are a primary input to the travel model. As noted above, we currently use a combination of ArcGIS, COGTools, and Cube Base. The consultant should provide advice on the recommended spatial database/GIS system for editing and managing transportation networks. The ideal network software would allow storage of multiple network scenarios and would allow more than one user to make edits to the networks at once.
+ 3. If we pursue specific new models, which software/platform should be used?
+   * ABM- CT-RAMP, DAYSIM, TourCast, ActivitySim
+   * Tour-based/hybrid model software
+   * Population synthesizer software
+   * DTA software
+
+Additionally, the PRD notes other modeling efforts in the Washington, D.C. area and beyond that could influence modeling choices made for COG/TPB -
+ - Baltimore Metropolitan Council’s (BMC’s) ABM, known as InSITE
+ - Maryland and Virginia’s statewide modeling efforts
+ - Maryland’s innovative modeling work, e.g., MITAMS
+ - Modeling work at the University of Maryland, both the Civil Engineering
+Department50 and the National Center for Smart Growth
+DTA modeling work for VDOT and NVTA51
+   * Model review conducted by Montgomery County Planning Department
+   * ActivitySim
+   * Zephyr Foundation
+   * Use of big data for model estimation, calibration, and validation
+
+### Task 3 Deliverables
+3.1. Technical report 2, Recommended software to implement the Gen3 Model. This technical report shall make recommendations for which software package(s) would be the best to use for the implementation of the Gen3 Model. It is possible that multiple software platforms could be recommended for the Gen3 Model, but the consultant should make the case for why this is a preferred option.
+
+## Task 4: Project management: Revisions based on TPB staff decisions
+Once the two consultant reports have been delivered to COG, TPB staff will need about three weeks to review the reports and make final decisions about the direction of the model development project. After the TPB staff determines which direction to take in the development of the Gen3 Model, the consultant may need to make some revisions to the project management plan (PMP). This could incorporate any decisions made about data collection/acquisition in support of the Gen3 or Gen4 models. The revised PMP should reference the strengths and weaknesses of the current travel model, as described in the first consultant report, and shall indicate which weaknesses or shortcomings are planned to be improved in the Gen3 Model.
+### Task 4 Deliverables
+4.1. Revised project management plan (PMP).
+4.2. Attend meetings as required. Prepare meeting summaries. 4.3. Monthly progress reports.
+
+## Task 5: Development of the Gen3 Model
+It is presumed that most of the model development work will be conducted by the selected consultant. Nonetheless, TPB staff will help with some aspects of providing data and files to the consultant and helping with some model development tasks. The exact nature of the roles (consultant and TPB staff) will be delineated after award
+of the contract. It is presumed that the initial model development will take about 1.5 years. Other model development steps are discussed below, with deliverables described further below. COG plans to issue one or more task-orders to specify which tasks will be pursued, the budget for that work, and the timeline.
+### 1. Model specification, estimation, and implementation
+Given that the model form has been selected, model variables will need to be selected, so that they may be estimated and calibrated. The consultant will need to perform model estimation and calibration. All work shall be documented, as noted in the deliverables section. The model will need to be implemented in the chosen software, so that the model can be applied for later calibration and validation work.
+### 2. Model calibration
+Model calibration is the process of estimating each model and model component from the best observed data available.
+### 3. Model validation
+Model validation should be performed with different data than is used for model calibration. Model calibration and validation are typically cyclic. Model validation should reference federal and/or state benchmarks and standards. For the first round of calibration/validation, it is likely that the 2017/2018 RTS will not yet be ready for use, but it is hoped that this data will be ready for use in the second round of calibration/validation.
+
+a) Validation tests
+Validation tests will be specified during the contract period. The recent re- validation of the production-use Gen2/Ver. 2.3 Model to year-2014 conditions54 provides some examples of validation tests that should be included in the work. As noted in that memo, there are different ways to perform model validation, but the validation of the Gen3 Model should be a comprehensive/traditional validation, which would identify shortcomings in the model that may need to be addressed in a second round of calibration/validation. Also, since the TPB’s year-2014 re-validation was focused on validation tests for only the traffic and transit assignment steps, the consultant should also review other literature, such as work done for the Florida Department of Transportation (FDOT) in 2008 regarding model validation,55 which provided comprehensive lists of validation tests used nationwide in all modeling steps (not just traffic and transit assignment).
+
+The developmental Gen2/Ver. 2.5 Model has also been undergoing validation tests. Although these have not yet been formally documented, many of these tests have been presented to the TFS in 2018 and 2019 and can be found on the web.
+
+b) Sensitivity tests
+Sensitivity tests, also known as dynamic validation, should be conducted to ensure that the model has appropriate sensitivity to key policy variables and inputs. A list of the key sensitivity tests will be specified during the contract period.
+### 4. Draft model documentation See deliverables below.
+### 5. Delivery of draft Gen3 Model to TPB staff and training
+At approximately 1.5 years into the contract, the draft Gen3 Model should be delivered to TPB staff, as noted below in the deliverables section.
+### 6. Task 5 Deliverables
+The following deliverables are envisioned (below). More detailed descriptions of these deliverables will be developed after the contract has been signed and as work progresses under the contract.
+
+5.1. Prior to performing the calibration and validation work, the consultant shall write a report specifying the plan for model specification, estimation, calibration, and validation. This report will discuss the observed data that will be used for model estimation, calibration, and validation. Model validation shall include both validation tests and sensitivity tests. The consultant shall provide TPB staff with the inputs for each sensitivity test, so that staff can replicate the test. This report shall be written and reviewed by TPB staff before substantive model estimation, calibration, or validation work proceeds. The report shall include a budget and timeline. It should be assumed that there will be two rounds of calibration and two rounds of validation, so that problems identified after the first round of model development can be fixed. The second round of calibration is described in the next Task description.
+
+5.2. A regional travel demand model that corresponds to proposed calibration and validation plans. The model will be specified, estimated, calibrated, and validated. The validation should conform to established standards and guidelines.56 For example, one test could be a comparison of model outputs between the current model (Ver. 2.3 or Ver. 2.5) and the new model with identical or comparable model inputs for both a base year and out year. For such a test, one would expect that the two models would produce comparable outputs, since both models were estimated/calibrated based on the same set of observed data (household travel survey and transit on-board surveys). Included with the new model would be any affiliated scripts or programs (e.g., summary scripts, QC/QA scripts). A draft version of the Gen3 Model should be delivered to TPB staff after about 1.5 years. The draft model will include the documentation listed below and any training needed to facilitate the TPB staff running the model.
+5.3. Draft documentation and training, including the following-
+• Model calibration report (initial calibration)
+• Model validation report (initial validation), including assumptions,model inputs changed due to the assumptions, and results from sensitivity tests.
+• Documentation about data processing procedures
+• Copies of all processed datasets, spreadsheets, scripts, and other similar items related to the model development, data processing,calibration and validation.
+• Travel model user’s guide, including flowcharts
+• Training for TPB staff. Particularly important if any new software is  dbeing used.
+Some MPOs have moved to using web-based online documentation (e.g., MTC). Although TPB staff generally prefers documentation in PDF format, we are open to learning about the benefits of web-based documentation.
+
+## Task 6: Second round of model calibration and validation
+It is presumed that the initial calibration/validation work will point to issues that need to be adjusted, necessitating a second round of calibration/validation by the consultant, which is planned for the second half of the three-year contract period. This could involve model re-estimation, re-calibration, and re-validation. As was the case before, for the second round, it is expected that the consultant will perform a series of validation and sensitivity tests. The performance of the model in this second round should be superior to the performance of the model in the first round of calibration/validation. It is hoped that the 2017/2018 RTS will be cleaned and factored at this point. If that is the case, this new observed data could be used for the second round of calibration/validation.
+### 1. Delineation of data sets to be used for current effort and to be collected for future work
+The first technical report included recommendations about data collection and acquisition for observed data to support development of Gen3 or Gen4 models. If there have been refinements to this thinking or further specification on needed data sets for the Gen3 Model development, those shall be summarized in a technical report or memo.
+### 2. Task 6 Deliverables
+6.1. Prior to performing the model re-calibration and re-validation, the consultant shall develop a calibration and validation plan that lays out the needed data, processing steps, and expected results, in a report specifying the plan for model re-estimation, re-calibration, and re- validation. Model re-validation shall include both validation tests and sensitivity tests. The consultant shall provide TPB staff with the inputs for each sensitivity test, so that staff can replicate the test. This report shall be written and reviewed by TPB staff before substantive model re- estimation, re-calibration, or re-validation work proceeds. The report shall include a budget and timeline.
+6.2. A final regional travel demand model that corresponds to proposed re- validation plans. The model will be specified, estimated, calibrated, and validated. Included with the model would be any affiliated scripts or programs (e.g., summary scripts, QC/QA scripts).
+6.3. Final documentation and training, including the following -
+ 1. Model calibration report (final calibration)
+ 2. Model validation report (final validation), including assumptions, model inputs changed due to the assumptions, and results from sensitivity tests.
+m3. Documentation about data processing procedures
+ 4. Copies of all processed datasets, spreadsheets, scripts, and other similar items related to the model development, data processing,calibration and validation.
+ 5. Travel model user’s guide, including flowcharts
+ 6. Training for TPB staff. Particularly important if any new software is being used.
+## Task 7: Miscellaneous activities
+### 1. Task 7 Deliverables
+7.1. Consultant shall provide other model development-related activities as needed.
+## Task 8: Final testing of Gen3 Model by TPB staff and decision about its readiness for production work
+TPB staff plans to spend about two months doing final tests with the Gen3 Model, during the last two months of the contract.
+### End of contract
+It is expected that the end of the contract will occur approximately three years after the start of the contract.

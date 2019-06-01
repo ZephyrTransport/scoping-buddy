@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+{% include head.html %}
+{% include js.html %}
+<body>
+{% include nav.html %}
+<div class="container-fluid" id="main">
+<div class="row">
+<div class="col-md-9">
+
+	<h3 class='zephyr'>{{ page.title }}</h3>
+
+	<section id="project-content">
+	<p>{{ page.solicitation-short-description | markdownify }}
+
+	<div class="intro-table">
+	<div class="row">
+		<div class="col-md-4 table-header">Solication Type:</div>
+		<div class="col-md-8">	{{ page.solicitation-type }}</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 table-header">Solication Release:</div>
+		<div class="col-md-8">{{ page.solicitation-release-date }}</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 table-header">Solication Value:</div>
+		<div class="col-md-8">{{ page.solicitation-value }}</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 table-header">Solication Years of Performance:</div>
+		<div class="col-md-8">{{ page.solicitation-years-of-performance }}</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 table-header">Solication DBE Goal:</div>
+		<div class="col-md-8">{{ page.solicitation-DBE-goal }}</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 table-header"></div>
+		<div class="col-md-8"></div>
+	</div>
+
+</div><!--intro-header-->
+<br/>
+<h6 class='zephyr'><a href='{{ page.solicitation-location }}'> [ Full Solicitation ]</a></h6>
+ <p> {{ page.content }}
+ </p>
+
+	</section>
+
+</div>
+
+<div class="col-md-3">
+	<div>
+	<!-- Create empty arrays -->
+	<h3><p class="zephyr">Related Projects</p></h3>
+		{% for project in site.projects %}
+		{% for ptag in page.tags %}
+		{% if project.title != page.title %}
+		{% if project.title != prev_title %}
+  		{% if project.tags contains ptag %}
+    	<p class="table-header"><a href={{ site.baseurl }}{{ project.url }}>>> {{ project.title }}</a></p>
+		{% assign prev_title = project.title %}
+  		{% endif %}
+  		{% endif %}
+  		{% endif %}
+		{% endfor %}
+		{% endfor %}
+	</div>
+</div>
+
+</div>
+
+
+
+{% include footer.html %}
+{% include js.html %}
+
+</body>
+</html>

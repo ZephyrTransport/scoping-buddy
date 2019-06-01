@@ -1,0 +1,75 @@
+---
+layout: project
+tags: [ MAG, RFQ, MPO, on-call, model-development, model-application]
+title: Maricopa Association of Governments (MAG) On-call Consulting Services for FY 2020 2021 MAG Model Development and Application
+agency: Maricopa Association of Governments (MAG)
+agency-type: MPO
+solicitation-type: RFQ
+solicitation-release-date: 2019-05-14
+solicitation-years-of-performance: 3
+solicitation-value: 650000
+solicitation-DBE-goal:
+solicitation-location: '{{ site.baseurl }}/library/2019-RFQ-MAG_ModelDev.pdf'
+solicitation-short-description: The main goals of this On-Call are to integrate the land use model with the transportation forecasting models, model emerging transportation technologies, develop supporting tools for the modeling data analysis, visualization, QA/QC procedures and documentation.
+---
+# Scope of services
+The purpose of this Request for Qualifications (RFQ) is to solicit Statement of Qualifications (SOQ) from consultants to participate in forming an On-Call list to provide the Maricopa Association of Governments (MAG) with specialized services for FY 2020-2021 MAG Model Development and Application On-Call. The duration of the On-Call list will be thirty six (36) months from the effective date of the contract with selected consultants. The main goals of this On-Call are to integrate the land use model with the transportation forecasting models, model emerging transportation technologies, develop supporting tools for the modeling data analysis, visualization, QA/QC procedures and documentation.
+
+The total budgeted amount available for this project in FY 2020 is $480,000 and FY 2021 is $170,000 for a total budget of $650,000. The total amount available under each Task Order issued to qualified, approved consultants under this RFQ will vary depending on the desired services.
+
+## Background
+The Maricopa Association of Governments (MAG) is a Council of Governments (COG) that serves as the regional agency for the metropolitan Phoenix area. When MAG was formed in 1967, the elected officials recognized the need for long-range planning and policy development on a regional scale. They realized that many issues such as transportation and air quality affected residents beyond the borders of their individual jurisdictions.
+
+MAG was founded in the spirit of cooperation. MAG members believe that by uniting, they can solve common problems, take an active role in long-range regional issues and address concerns that affect all of the communities.
+
+MAG is the designated metropolitan planning organization (MPO) for transportation planning in the Maricopa metropolitan region. MAG also has been designated by the Governor to serve as the principal planning agency for the region in a number of other areas, including air quality, water quality management and solid waste management. In addition, through an Executive Order from the Governor, MAG develops population estimates and projections for the region.
+
+MAG develops and maintains a number of transportation modeling tools required for regional planning processes, air quality conformity analyses and technical support for planning and engineering needs of MAG member agencies and regional transportation planning community. MAG develops and maintains a four-step trip based model and an Activity Based Model (ABM). MAG maintains and updates extensive traffic counts, travel time, and speed datasets as well as a variety of travel and socio-economic information in accordance with federal requirements and regional planning needs. Timely update of traffic data and the models is important for maintaining currency of the regional forecasts and answering emerging and ongoing regional planning needs.
+
+The four-step model and ABM depend upon inputs from the land use model maintained at MAG - Arizona’s Socioeconomic Modeling and Reporting Toolbox (AZ-SMART). AZ-SMART is a highly disaggregate, micro- simulation model of individual decision making agents in the region, each decision about where to locate based on numerous factors including accessibility to employment and shopping opportunities, land and housing values, etc. The AZ-SMART model system is a highly customized version of the UrbanSim modeling system for the MAG region. Currently, the AZ-SMART system is loosely coupled with the transportation models, requiring a manual hand-off of files between the systems.
+
+The main goals of this On-Call are to more tightly integrate and automate the land use model with the transportation forecasting models, model emerging transportation technologies, develop supporting tools for the modeling data analysis, visualization, QA/QC procedures and documentation.
+
+As part of the Project, the selected CONSULTANT(s) will be requested to assist with one or more of the following - (1) integration of land-use model with the transportation forecasting models, (2) improvements and maintenance of travel forecasting models, (3) relevant data collection and acquisitions required for transportation model developments, and (4) development of supporting tools for the modeling data analysis, visualization, QA/QC procedures and documentation. The selected CONSULTANT(s) may be requested to recalibrate submodels of the MAG regional models. They may also be asked to perform detailed data and model output analysis, comparison of model results, visualization of model and factual data as well as other tasks required for the success of the on-call. Modeling improvements and algorithmic updates will be required where warranted. CONSULTANT(s) will also work on updating and improving model software. All procedures that are employed for obtaining tasks deliverables should be thoroughly documented. MAG staff should be able to replicate all developed procedures and results for the purposes of quality control and in order to familiarize MAG staff with the developments. All technologies, software and programming languages used for the various tasks shall be agreed upon in advance. All deliverables and related information, including data, software and source code shall become the property of MAG, unless it is agreed with MAG otherwise or prohibited by relevant laws.
+
+Purpose of the On-Call Consultant List
+The intent of this program is to enable MAG staff to augment existing resources by forming a pool of qualified consultants to provide specialized services that are required for executing tasks and projects in identified areas (“Task Orders”). To expedite the delivery of these consultant services, MAG will preselect an On-Call list of qualified consultants to participate in the FY 2020-2021 MAG Model Development and Application On-Call.
+
+It is anticipated that the selected consultants will utilize state-of-the-art engineering and planning tools in executing the Task Orders. All third-party software and programming languages used for the various tasks shall be agreed upon in advance. All deliverables and related information, including data and software, shall become the property of MAG.
+
+Areas of Expertise
+Consultants may qualify in one or more of the following Areas of Expertise. Statements of Qualification (SOQs) must clearly indicate each area of expertise being offered.
+
+A. Area of Expertise - Transportation and Land Use Modeling
+The CONSULTANT will have demonstrated expertise in one or more areas of the transportation modeling, including, but not limited to the following specific areas of expertise -
+ - Development and integration of land-use model, freight models, and vehicle fleet
+composition model with the regional travel demand forecasting models.
+ - Improvements, development, estimation, calibration and validation of the regional four-step
+travel demand forecasting model and ABM.
+ - Improvements and development of relevant software.
+ - Visualization of model outputs from regional travel demand forecasting models.
+
+The consultant will have state-of-the-art travel demand modeling experience as well as be familiar with new and innovative methodological techniques used for the improvement of these models.
+
+B. Area of Expertise - Transportation Data Collection and Management
+The CONSULTANT will have demonstrated expertise in one or more areas of the transportation data collection and management, including, but not limited to the following specific areas of expertise -
+ - Data acquisition, data collection, data analysis, data integration, data storage and other
+data management not addressed in other MAG data management efforts or emerged as a
+part of the on-call task orders.
+ - Data collection, management and integration of disparate datasets required for model
+development such as daily and hourly parking cost, transit fare, university dorm, school enrollment, daycare center location and capacity.
+
+Consultants applying for qualification under the area of expertise A and/or B are expected to demonstrate the expertise outlined above in specific projects and applications with verifiable references. Consultants are encouraged to be as specific as possible in describing previous experiences preferably in a clear tabulated form, mentioning information about previous work with their direct involvement that can be made available to MAG. If possible, the information should include project dates, client information, consultant project manager and technical leads if different, budget of the project and/or size of the relevant regional model or surveys.
+
+Anticipated Projects -
+The following list provides a sample of the types of Task Orders that may be issued under this project. The list is by no means mutually exclusive or all inclusive.
+ - Tighter integration and automation of the land use model with the transportation forecasting models.
+ - Improvements to the model feedback and model runtime efficiencies of the regional forecasting models.
+ - Continue with the development and enhancements for transformative mobility options for multiple modules of the regional transportation models.
+ - Validation of submodels of the regional transportation models to recently obtained counts and other datasets.
+ - Integration of a vehicle fleet composition model into the auto ownership model. Additional changes to the existing submodels may be needed to reflect the auto ownership and travel behavior changes for the mobility constrained population due to transformative mobility options.
+ - Updates to the model choice model for further disaggregation, updates related to AV/TNC in mode choice, updates to the transit assignment for a higher temporal resolution and development of a Park-and-Ride (PNR) location choice model.
+ - Development of a disaggregate air passenger model for MAG ABM using the existing static air passenger model (present in the four step model) as a starting point.
+ - Refinement to the freight model and its integration with the regional travel forecasting model system.
+ - Update of the population synthesis model and related components with the latest census data.
+ - Collection, analysis and management of relevant data required for model development.

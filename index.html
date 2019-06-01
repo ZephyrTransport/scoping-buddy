@@ -1,0 +1,85 @@
+---
+layout: front
+title: Code Library
+subTitle: Hope you find what you are looking for.
+---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"</script>
+<script src="{{ site.baseurl }}/js/tag-filter.js/"></script>
+<!-- Main -->
+<div class="row">
+
+<div class="col-md-8">
+<h4 class="zephyr">Welcome </h4>
+<p>Welcome to the Zephyr Scope Buddy. Click the tags to the right to search by tag or
+</p>
+
+<section id="projects">
+<h3><p class="zephyr">Projects</p></h3>
+<div class="card-deck">
+
+
+{% for project in site.projects %}
+  {% assign lower_tags = '' | split: '' %}
+  {% for tag in project.tags %}
+    {% assign lowercase_tag = tag | downcase | split: ' ' %}
+    {% assign lower_tags = lower_tags | concat: lowercase_tag %}
+  {% endfor %}
+	<article class='project {{ lower_tags | join: " "}} {{ project.agency }}'>
+	     <!-- article details here -->
+      <a href={{ site.baseurl }}{{ project.url }} > >>{{ project.title }}</a>
+	</article>
+{% endfor %}
+
+</div>
+</section>
+
+</div>
+
+<div class="col-md-4">
+	<!-- Side Widget Well -->
+	<div>
+    <h4>Find by Tags</h4>
+    {% assign all_tags =  site.empty_array %}
+    {% assign all_agencies = site.empty_array %}
+    {% for project in site.projects %}
+      {% assign all_tags = all_tags | concat: project.tags %}
+      {% assign all_agencies = all_agencies | append: project.agency %}
+    {% endfor %}
+
+    {% assign lower_tags = site.empty_array %}
+    {% for tag in all_tags %}
+      {% assign lowercase_tag = tag | downcase | split: ' ' %}
+      {% assign lower_tags = lower_tags | concat: lowercase_tag %}
+    {% endfor %}
+    <script>
+      setTags( '{{ unique_tags | jsonify }}' );
+      setAgencies( '{{ unique_agencies | uniq | jsonify }}' );
+    </script>
+    {% assign unique_tags = lower_tags | uniq %}
+    {% for tag in unique_tags %}
+
+      {% assign tag_count = 0 %}
+      {% for t in lower_tags %}
+        {% if t == tag %}{% assign tag_count = tag_count | plus: 1 %}{% endif %}
+      {% endfor %}
+
+      {% assign tag_slug = tag | slugify %}
+      <div class="row">
+        <small>
+        <a href= "{{ site.baseurl }}/index?tag={{ tag_slug }}">
+        <span class='badge badge-pill badge-primary'> {{ tag_count }}</span>
+        {{ tag }}</small>
+        </a>
+      </div>
+
+    {% endfor %}
+    <h3>Updates</h3>
+		<p class="side-bar">This site is a work in progress.  We welcome feedback on how to make it more helpful.</p>
+	</div>
+
+</div>
+<!-- /.col-md-4 -->
+
+
+</div>
+<!-- /.row -->
