@@ -15,7 +15,8 @@ subTitle: Hope you find what you are looking for.
 
 <section id="projects">
 <h3><p class="zephyr">Projects</p></h3>
-<div class="card-deck">
+<div class="card-columns">
+  <div class="card-deck">
 
 
 {% for project in site.projects %}
@@ -24,12 +25,24 @@ subTitle: Hope you find what you are looking for.
     {% assign lowercase_tag = tag | downcase | split: ' ' %}
     {% assign lower_tags = lower_tags | concat: lowercase_tag %}
   {% endfor %}
-	<article class='project {{ lower_tags | join: " "}} {{ project.agency }}'>
-	     <!-- article details here -->
-      <a href={{ site.baseurl }}{{ project.url }} > >>{{ project.title }}</a>
-	</article>
-{% endfor %}
+  <div>
 
+	<article class='project {{ lower_tags | join: " "}} {{ project.agency }}'>
+    <div class="card">
+  		<div class="card-block">
+	     <!-- article details here -->
+      <a href={{ site.baseurl }}{{ project.url }} >
+        <h6 class="card-title">{{ project.title }}</h6>
+        {% for tag in project.tags %}
+				<span class='badge badge-pill badge-primary'> {{ tag }}</span>
+				{% endfor %}
+      </a>
+      </div>
+    </div>
+	</article>
+    </div>
+{% endfor %}
+  </div>
 </div>
 </section>
 
@@ -73,7 +86,7 @@ subTitle: Hope you find what you are looking for.
 
     {% endfor %}
     <h3>Updates</h3>
-		<p class="side-bar">This site is a work in progress.  We welcome feedback on how to make it more helpful.</p>
+		<p class="side-bar">This site is a work in progress.  We <a href="">welcome feedback on</a> how to make it more helpful.</p>
 	</div>
 
 </div>

@@ -1,6 +1,6 @@
 ---
 layout: project
-tags: [ model-update, model-development, CA, NV, RFP ]
+tags: [ model-update, model-development, CA, NV, RFP, trpa, mpo ]
 title: Tahoe Regional Planning Agency Model Update
 agency: Tahoe Regional Planning Agency
 agency-type:
